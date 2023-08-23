@@ -1,20 +1,15 @@
 import time
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
-from selenium.webdriver.firefox.service import Service as FirefoxService
 from bs4 import BeautifulSoup
+import time
 import pandas as pd
 import re
 
 def ScrapComment(url):
-    geckodriver_path = GeckoDriverManager().install()
-    firefox_service = FirefoxService(geckodriver_path)
-    firefox_options = webdriver.FirefoxOptions()
-    firefox_options.add_argument("--headless")
-    # option = webdriver.FirefoxOptions()
-    # option.add_argument("--headless")
-    # driver = webdriver.Firefox(executable_path = GeckoDriverManager().install(), options = option)
-    driver = webdriver.Firefox(service=firefox_service, options=firefox_options)
+    option = webdriver.FirefoxOptions()
+    option.add_argument("--headless")
+    driver = webdriver.Firefox(executable_path = GeckoDriverManager().install(), options = option)
     driver.get(url)
     time.sleep(2)
     prev_h = 0
