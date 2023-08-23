@@ -8,7 +8,7 @@ import re
 
 def ScrapComment(url):
     geckodriver_path = GeckoDriverManager().install()
-    firefox_service = FirefoxService(executable_path = geckodriver_path)
+    firefox_service = FirefoxService(geckodriver_path)
     firefox_options = webdriver.FirefoxOptions()
     firefox_options.add_argument("--headless")
     # option = webdriver.FirefoxOptions()
