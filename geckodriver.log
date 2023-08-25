@@ -28531,3 +28531,36 @@ JavaScript error: https://www.youtube.com/watch?v=1Vj4gglxUH4, line 12: TypeErro
 JavaScript error: https://www.youtube.com/watch?v=1Vj4gglxUH4, line 12: TypeError: can't access dead object
 [Parent 16712, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
 [Utility 20296, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692850272094	geckodriver	INFO	Listening on 127.0.0.1:52367
+1692850275109	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "5236 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LENOVO~1\\AppData\\Local\\Temp\\rust_mozprofileMZUXzt"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692850275808	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692850275920	Marionette	INFO	Listening on port 52375
+WebDriver BiDi listening on ws://127.0.0.1:52368
+Read port: 52375
+1692850276257	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52368/devtools/browser/2f4afa22-b4ec-4e56-8586-4e10ad3b9706
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 759))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 411))
+1692850305370	Marionette	INFO	Stopped listening on port 52375
+JavaScript warning: https://www.google.com/js/th/iesEQ4xzziy5Hu9xj5MD97OdpJqf23Z9Gv4ZCReYTnU.js line 2 > eval line 7523 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.youtube.com/s/player/21812a9c/player_ias.vflset/en_US/base.js, line 5337: Script terminated by timeout at:
+XUa/this.xhr.onreadystatechange@https://www.youtube.com/s/player/21812a9c/player_ias.vflset/en_US/base.js:5337:402
+
+JavaScript error: https://www.youtube.com/watch?v=26YgjGYlvOQ, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/watch?v=26YgjGYlvOQ, line 12: TypeError: can't access dead object
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/watch?v=26YgjGYlvOQ, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/watch?v=26YgjGYlvOQ, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/watch?v=26YgjGYlvOQ, line 12: TypeError: can't access dead object
+JavaScript error: resource://gre/modules/UpdateService.sys.mjs, line 5434: TypeError: request.channel is null
+1692850306072	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, channelStatus: null, errorCode: 5, reason: error
+console.error: Region.sys.mjs: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", "resource://gre/modules/Region.sys.mjs", 738))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 411))
+[Parent 13584, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[RDD 13340, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
