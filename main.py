@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
-from grpc import Channel
+# from grpc import Channel
 from selenium.webdriver.common.by import By
 from selenium.common import exceptions
 import sys
@@ -41,9 +41,9 @@ def scrape(url):
                 }
                 return getActualHeight();
             """)
-        driver.execute_script(f"window.scrollTo({prev_h},{prev_h + 200})")
-        time.sleep(1)
-        prev_h +=200
+        driver.execute_script(f"window.scrollTo({prev_h},{prev_h + 300})")
+        time.sleep(2)
+        prev_h +=300
         if prev_h >= height:
             break
 
@@ -66,29 +66,38 @@ def scrape(url):
 
 if __name__ == '__main__':
 
-    # urls = [
-    #     'https://www.youtube.com/watch?v=NE8ifdpTZ2g',
-    # ]
+    urls = [
+        'https://www.youtube.com/watch?v=SYMnN7OsGbc',
+        'https://www.youtube.com/watch?v=CO5UNXOomoI',
+        'https://www.youtube.com/watch?v=GdXSiM0u3wk',
+        'https://www.youtube.com/watch?v=9xNb9OX1yvM',
+        'https://www.youtube.com/watch?v=Mjq1_PDUI6o',
+        'https://www.youtube.com/watch?v=EaStGNDB8Hg',
+        'https://www.youtube.com/watch?v=XG2ppnZa6IA',
+        'https://www.youtube.com/watch?v=tyxi70dS8OI',
+        'https://www.youtube.com/watch?v=ejdTb1QU48I',
+        'https://www.youtube.com/watch?v=9hGJVlwKI5g',
+    ]
 
-    # for url in urls:
-    #     scrape(url)
+    for url in urls:
+        scrape(url)
 
-    # # Create a DataFrame from the collected data
-    # dataframe = pd.DataFrame(data)
-
-    # # Save the dataframe to Excel
-    # dataframe.to_excel("Comments.xlsx", index=False)
-
-    channelid="UCl_1ZH0cUIFXGh9Tj0A47DA"
-    list=[]
-
-    url="https://www.youtube.com/watch?v="
-    videos = scrapetube.get_channel(channelid)
-
-    for video in videos:
-        url1 = url + str(video['videoId'])
-        list.append(url1)
-        scrape(url1)
-
+    # Create a DataFrame from the collected data
     dataframe = pd.DataFrame(data)
-    dataframe.to_excel("Comments.xlsx", index=False)
+
+    # Save the dataframe to Excel
+    dataframe.to_excel("Comments1.xlsx", index=False)
+
+    # channelid="UCl_1ZH0cUIFXGh9Tj0A47DA"
+    # list=[]
+
+    # url="https://www.youtube.com/watch?v="
+    # videos = scrapetube.get_channel(channelid)
+
+    # for video in videos:
+    #     url1 = url + str(video['videoId'])
+    #     list.append(url1)
+    #     scrape(url1)
+
+    # dataframe = pd.DataFrame(data)
+    # dataframe.to_excel("Comments.xlsx", index=False)
